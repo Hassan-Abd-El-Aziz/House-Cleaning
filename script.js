@@ -217,7 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let pageTitle = document.title;
 
   window.addEventListener("blur", function () {
-    document.title = "نعود قريباً ✋ | حسام رضوان";
+    document.title = "نعود قريباً ✋ |  هوم رؤية";
   });
 
   window.addEventListener("focus", function () {
