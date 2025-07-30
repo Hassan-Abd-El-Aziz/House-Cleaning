@@ -787,19 +787,27 @@ body {
   background-color: var(--white);
 }
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .contact-info {
   padding-right: 30px;
 }
-
+.contact-social {
+  display: flex;
+  justify-content: center;
+}
+.contact-social a {
+  text-decoration: none;
+}
 .info-item {
   display: flex;
   margin-bottom: 30px;
+  justify-content: center;
 }
 
 .info-icon {
@@ -1069,6 +1077,13 @@ body {
   gap: 20px;
 }
 
+.footer-services ul {
+  list-style: none;
+}
+.footer-services li {
+  margin-bottom: 15px;
+  display: block;
+}
 .footer-services a {
   color: var(--white);
   text-decoration: none;
