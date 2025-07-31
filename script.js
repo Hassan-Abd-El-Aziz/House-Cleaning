@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (count < target) {
         counter.innerText = Math.ceil(count + increment);
-        setTimeout(animateCounters, 1);
+        setTimeout(animateCounters, 300);
       } else {
         counter.innerText = target;
       }
@@ -184,34 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-
-  // تأثيرات إرسال النموذج
-  const contactForm = document.getElementById("contactForm");
-
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      const submitBtn = this.querySelector(".submit-btn");
-      submitBtn.disabled = true;
-      submitBtn.querySelector(".btn-text").textContent = "جاري الإرسال...";
-
-      // هنا يمكنك إضافة كود الإرسال الفعلي عبر AJAX
-
-      setTimeout(() => {
-        submitBtn.innerHTML = '<i class="fas fa-check"></i> تم الإرسال بنجاح';
-        submitBtn.style.backgroundColor = "var(--success-color)";
-
-        setTimeout(() => {
-          submitBtn.innerHTML =
-            '<span class="btn-text">إرسال الرسالة</span><span class="btn-icon"><i class="fas fa-paper-plane"></i></span>';
-          submitBtn.style.backgroundColor = "var(--primary-color)";
-          submitBtn.disabled = false;
-          this.reset();
-        }, 2000);
-      }, 1500);
-    });
-  }
 
   // تحسين SEO: تغيير عنوان الصفحة عند تركها
   let pageTitle = document.title;
