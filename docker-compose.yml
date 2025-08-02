@@ -1,0 +1,6 @@
+services:
+  site2:
+    build: .
+    container_name: houseClean
+    ports:
+      - "9002:80"
