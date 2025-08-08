@@ -1414,7 +1414,7 @@ body {
   }
 }
 /* ........... */
-@media (max-width: 576px) {
+@media (max-width: 500px) {
   .hero-title {
     font-size: 1.8rem;
   }
