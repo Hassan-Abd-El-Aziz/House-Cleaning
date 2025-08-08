@@ -131,26 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // تأثيرات hover للبطاقات
-  //   document.querySelectorAll(".service-card").forEach((card) => {
-  //     card.addEventListener("mousemove", function (e) {
-  //       const x = e.pageX - this.offsetLeft;
-  //       const y = e.pageY - this.offsetTop;
-
-  //       const centerX = this.offsetWidth / 2;
-  //       const centerY = this.offsetHeight / 2;
-
-  //       const angleX = (centerY - y) / 10;
-  //       const angleY = (x - centerX) / 10;
-
-  //       this.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-  //     });
-
-  //     card.addEventListener("mouseleave", function () {
-  //       this.style.transform = "perspective(1000px) rotateX(0) rotateY(0)";
-  //     });
-  //   });
-
   // نماذج المقالات
   const modalTriggers = document.querySelectorAll(".modal-trigger");
   const modals = document.querySelectorAll(".blog-modal");
